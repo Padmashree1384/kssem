@@ -14,7 +14,7 @@ genai.configure(api_key="AIzaSyChUzmOrRlZRCtmY7nv90suM86bcUj1z58")  # Replace wi
 
 # Load FAISS index & text mappings
 index = faiss.read_index("faiss_index_cleaned.bin")
-with open("dataset/text_mappings_cleaned.json", "r", encoding="utf-8") as f:
+with open("text_mappings_cleaned.json", "r", encoding="utf-8") as f:
     text_list = json.load(f)
 
 # Load embedding model
